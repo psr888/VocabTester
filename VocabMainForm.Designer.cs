@@ -29,698 +29,762 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VocabMainForm));
-            this.Word_Label = new System.Windows.Forms.Label();
-            this.FileNameBox = new System.Windows.Forms.TextBox();
-            this.OpenButton = new System.Windows.Forms.Button();
-            this.WordBox = new System.Windows.Forms.TextBox();
-            this.DefintionBox_1 = new System.Windows.Forms.TextBox();
-            this.Save_Button = new System.Windows.Forms.Button();
-            this.Defintion_Label_2 = new System.Windows.Forms.Label();
-            this.Defintion_Label_3 = new System.Windows.Forms.Label();
-            this.DefintionBox_2 = new System.Windows.Forms.TextBox();
-            this.DefintionBox_3 = new System.Windows.Forms.TextBox();
-            this.NumberofEntriesLabel = new System.Windows.Forms.Label();
-            this.SelectEntrylabel = new System.Windows.Forms.Label();
-            this.NumberofEntriesBox = new System.Windows.Forms.TextBox();
-            this.SelectEntryBox = new System.Windows.Forms.TextBox();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.Defintion_Label_1 = new System.Windows.Forms.Label();
-            this.MeaningAndSentenceLabel = new System.Windows.Forms.Label();
-            this.MeaningAndSentenceLabel2 = new System.Windows.Forms.Label();
-            this.SentenceBox1 = new System.Windows.Forms.TextBox();
-            this.SentenceBox2 = new System.Windows.Forms.TextBox();
-            this.SentenceBox3 = new System.Windows.Forms.TextBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
-            this.Line = new System.Windows.Forms.Label();
-            this.Word = new System.Windows.Forms.Label();
-            this.TestWordBox = new System.Windows.Forms.TextBox();
-            this.AnswerA = new System.Windows.Forms.TextBox();
-            this.AnswerB = new System.Windows.Forms.TextBox();
-            this.AnswerC = new System.Windows.Forms.TextBox();
-            this.AnswerD = new System.Windows.Forms.TextBox();
-            this.Result_Box = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.Label();
-            this.TestButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PercentCorrectBox = new System.Windows.Forms.TextBox();
-            this.AButton = new System.Windows.Forms.Button();
-            this.BButton = new System.Windows.Forms.Button();
-            this.CButton = new System.Windows.Forms.Button();
-            this.DButton = new System.Windows.Forms.Button();
-            this.Whatquestiontext = new System.Windows.Forms.Label();
-            this.QuestionCountBox = new System.Windows.Forms.TextBox();
-            this.ResetButton = new System.Windows.Forms.Button();
-            this.NumberCorrectBox = new System.Windows.Forms.TextBox();
-            this.ModesBox = new System.Windows.Forms.GroupBox();
-            this.ReverseAlphabeticalMode = new System.Windows.Forms.RadioButton();
-            this.AlphabeticalMode = new System.Windows.Forms.RadioButton();
-            this.ReverseOrderMode = new System.Windows.Forms.RadioButton();
-            this.OrderMode = new System.Windows.Forms.RadioButton();
-            this.RandomMode = new System.Windows.Forms.RadioButton();
-            this.DefinitonLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PartOfSpeech1 = new System.Windows.Forms.TextBox();
-            this.PoStext = new System.Windows.Forms.Label();
-            this.SentenceLabel = new System.Windows.Forms.Label();
-            this.PartOfSpeech2 = new System.Windows.Forms.TextBox();
-            this.PoStext2 = new System.Windows.Forms.Label();
-            this.DefinitonLabel2 = new System.Windows.Forms.Label();
-            this.SentenceLabel2 = new System.Windows.Forms.Label();
-            this.PartOfSpeech3 = new System.Windows.Forms.TextBox();
-            this.PoS3text = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ModesBox.SuspendLayout();
-            this.SuspendLayout();
+            Word_Label = new System.Windows.Forms.Label();
+            FileNameBox = new System.Windows.Forms.TextBox();
+            OpenButton = new System.Windows.Forms.Button();
+            WordBox = new System.Windows.Forms.TextBox();
+            DefintionBox_1 = new System.Windows.Forms.TextBox();
+            Save_Button = new System.Windows.Forms.Button();
+            Defintion_Label_2 = new System.Windows.Forms.Label();
+            Defintion_Label_3 = new System.Windows.Forms.Label();
+            DefintionBox_2 = new System.Windows.Forms.TextBox();
+            DefintionBox_3 = new System.Windows.Forms.TextBox();
+            NumberofEntriesLabel = new System.Windows.Forms.Label();
+            SelectEntrylabel = new System.Windows.Forms.Label();
+            NumberofEntriesBox = new System.Windows.Forms.TextBox();
+            SelectEntryBox = new System.Windows.Forms.TextBox();
+            AddButton = new System.Windows.Forms.Button();
+            Defintion_Label_1 = new System.Windows.Forms.Label();
+            MeaningAndSentenceLabel = new System.Windows.Forms.Label();
+            MeaningAndSentenceLabel2 = new System.Windows.Forms.Label();
+            SentenceBox1 = new System.Windows.Forms.TextBox();
+            SentenceBox2 = new System.Windows.Forms.TextBox();
+            SentenceBox3 = new System.Windows.Forms.TextBox();
+            UpdateButton = new System.Windows.Forms.Button();
+            Line = new System.Windows.Forms.Label();
+            Word = new System.Windows.Forms.Label();
+            TestWordBox = new System.Windows.Forms.TextBox();
+            AnswerA = new System.Windows.Forms.TextBox();
+            AnswerB = new System.Windows.Forms.TextBox();
+            AnswerC = new System.Windows.Forms.TextBox();
+            AnswerD = new System.Windows.Forms.TextBox();
+            Result_Box = new System.Windows.Forms.TextBox();
+            TextBox1 = new System.Windows.Forms.Label();
+            TestButton = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            PercentCorrectBox = new System.Windows.Forms.TextBox();
+            AButton = new System.Windows.Forms.Button();
+            BButton = new System.Windows.Forms.Button();
+            CButton = new System.Windows.Forms.Button();
+            DButton = new System.Windows.Forms.Button();
+            Whatquestiontext = new System.Windows.Forms.Label();
+            QuestionCountBox = new System.Windows.Forms.TextBox();
+            ResetButton = new System.Windows.Forms.Button();
+            NumberCorrectBox = new System.Windows.Forms.TextBox();
+            ModesBox = new System.Windows.Forms.GroupBox();
+            ReverseAlphabeticalMode = new System.Windows.Forms.RadioButton();
+            AlphabeticalMode = new System.Windows.Forms.RadioButton();
+            ReverseOrderMode = new System.Windows.Forms.RadioButton();
+            OrderMode = new System.Windows.Forms.RadioButton();
+            RandomMode = new System.Windows.Forms.RadioButton();
+            DefinitonLabel = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            PartOfSpeech1 = new System.Windows.Forms.TextBox();
+            PoStext = new System.Windows.Forms.Label();
+            SentenceLabel = new System.Windows.Forms.Label();
+            PartOfSpeech2 = new System.Windows.Forms.TextBox();
+            PoStext2 = new System.Windows.Forms.Label();
+            DefinitonLabel2 = new System.Windows.Forms.Label();
+            SentenceLabel2 = new System.Windows.Forms.Label();
+            PartOfSpeech3 = new System.Windows.Forms.TextBox();
+            PoS3text = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            ModesBox.SuspendLayout();
+            SuspendLayout();
             // 
             // Word_Label
             // 
-            this.Word_Label.AutoSize = true;
-            this.Word_Label.Location = new System.Drawing.Point(9, 112);
-            this.Word_Label.Name = "Word_Label";
-            this.Word_Label.Size = new System.Drawing.Size(33, 13);
-            this.Word_Label.TabIndex = 1;
-            this.Word_Label.Text = "Word";
+            Word_Label.AutoSize = true;
+            Word_Label.Location = new System.Drawing.Point(10, 129);
+            Word_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Word_Label.Name = "Word_Label";
+            Word_Label.Size = new System.Drawing.Size(36, 15);
+            Word_Label.TabIndex = 1;
+            Word_Label.Text = "Word";
             // 
             // FileNameBox
             // 
-            this.FileNameBox.Location = new System.Drawing.Point(83, 15);
-            this.FileNameBox.Name = "FileNameBox";
-            this.FileNameBox.Size = new System.Drawing.Size(705, 20);
-            this.FileNameBox.TabIndex = 3;
+            FileNameBox.Location = new System.Drawing.Point(97, 17);
+            FileNameBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FileNameBox.Name = "FileNameBox";
+            FileNameBox.Size = new System.Drawing.Size(822, 23);
+            FileNameBox.TabIndex = 3;
             // 
             // OpenButton
             // 
-            this.OpenButton.Location = new System.Drawing.Point(2, 12);
-            this.OpenButton.Name = "OpenButton";
-            this.OpenButton.Size = new System.Drawing.Size(75, 23);
-            this.OpenButton.TabIndex = 4;
-            this.OpenButton.Text = "Open";
-            this.OpenButton.UseVisualStyleBackColor = true;
-            this.OpenButton.Click += new System.EventHandler(this.OpenButton_Click);
+            OpenButton.Location = new System.Drawing.Point(2, 14);
+            OpenButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            OpenButton.Name = "OpenButton";
+            OpenButton.Size = new System.Drawing.Size(88, 27);
+            OpenButton.TabIndex = 4;
+            OpenButton.Text = "Open";
+            OpenButton.UseVisualStyleBackColor = true;
+            OpenButton.Click += OpenButton_Click;
             // 
             // WordBox
             // 
-            this.WordBox.Location = new System.Drawing.Point(94, 109);
-            this.WordBox.Name = "WordBox";
-            this.WordBox.Size = new System.Drawing.Size(134, 20);
-            this.WordBox.TabIndex = 5;
+            WordBox.Location = new System.Drawing.Point(110, 126);
+            WordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            WordBox.Name = "WordBox";
+            WordBox.Size = new System.Drawing.Size(156, 23);
+            WordBox.TabIndex = 5;
             // 
             // DefintionBox_1
             // 
-            this.DefintionBox_1.AccessibleName = " ";
-            this.DefintionBox_1.Location = new System.Drawing.Point(216, 178);
-            this.DefintionBox_1.Name = "DefintionBox_1";
-            this.DefintionBox_1.Size = new System.Drawing.Size(536, 20);
-            this.DefintionBox_1.TabIndex = 6;
+            DefintionBox_1.AccessibleName = " ";
+            DefintionBox_1.Location = new System.Drawing.Point(252, 205);
+            DefintionBox_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DefintionBox_1.Name = "DefintionBox_1";
+            DefintionBox_1.Size = new System.Drawing.Size(625, 23);
+            DefintionBox_1.TabIndex = 6;
             // 
             // Save_Button
             // 
-            this.Save_Button.Location = new System.Drawing.Point(2, 41);
-            this.Save_Button.Name = "Save_Button";
-            this.Save_Button.Size = new System.Drawing.Size(75, 23);
-            this.Save_Button.TabIndex = 8;
-            this.Save_Button.Text = "Save";
-            this.Save_Button.UseVisualStyleBackColor = true;
-            this.Save_Button.Click += new System.EventHandler(this.Save_Button_Click);
+            Save_Button.Location = new System.Drawing.Point(2, 47);
+            Save_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Save_Button.Name = "Save_Button";
+            Save_Button.Size = new System.Drawing.Size(88, 27);
+            Save_Button.TabIndex = 8;
+            Save_Button.Text = "Save";
+            Save_Button.UseVisualStyleBackColor = true;
+            Save_Button.Click += Save_Button_Click;
             // 
             // Defintion_Label_2
             // 
-            this.Defintion_Label_2.AutoSize = true;
-            this.Defintion_Label_2.Location = new System.Drawing.Point(9, 232);
-            this.Defintion_Label_2.Name = "Defintion_Label_2";
-            this.Defintion_Label_2.Size = new System.Drawing.Size(65, 13);
-            this.Defintion_Label_2.TabIndex = 9;
-            this.Defintion_Label_2.Text = "Defintion #2";
+            Defintion_Label_2.AutoSize = true;
+            Defintion_Label_2.Location = new System.Drawing.Point(10, 268);
+            Defintion_Label_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Defintion_Label_2.Name = "Defintion_Label_2";
+            Defintion_Label_2.Size = new System.Drawing.Size(72, 15);
+            Defintion_Label_2.TabIndex = 9;
+            Defintion_Label_2.Text = "Defintion #2";
             // 
             // Defintion_Label_3
             // 
-            this.Defintion_Label_3.AutoSize = true;
-            this.Defintion_Label_3.Location = new System.Drawing.Point(12, 303);
-            this.Defintion_Label_3.Name = "Defintion_Label_3";
-            this.Defintion_Label_3.Size = new System.Drawing.Size(65, 13);
-            this.Defintion_Label_3.TabIndex = 10;
-            this.Defintion_Label_3.Text = "Defintion #3";
+            Defintion_Label_3.AutoSize = true;
+            Defintion_Label_3.Location = new System.Drawing.Point(14, 350);
+            Defintion_Label_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Defintion_Label_3.Name = "Defintion_Label_3";
+            Defintion_Label_3.Size = new System.Drawing.Size(72, 15);
+            Defintion_Label_3.TabIndex = 10;
+            Defintion_Label_3.Text = "Defintion #3";
             // 
             // DefintionBox_2
             // 
-            this.DefintionBox_2.AccessibleName = " ";
-            this.DefintionBox_2.Location = new System.Drawing.Point(216, 256);
-            this.DefintionBox_2.Name = "DefintionBox_2";
-            this.DefintionBox_2.Size = new System.Drawing.Size(536, 20);
-            this.DefintionBox_2.TabIndex = 11;
+            DefintionBox_2.AccessibleName = " ";
+            DefintionBox_2.Location = new System.Drawing.Point(252, 295);
+            DefintionBox_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DefintionBox_2.Name = "DefintionBox_2";
+            DefintionBox_2.Size = new System.Drawing.Size(625, 23);
+            DefintionBox_2.TabIndex = 11;
             // 
             // DefintionBox_3
             // 
-            this.DefintionBox_3.AccessibleName = " ";
-            this.DefintionBox_3.Location = new System.Drawing.Point(216, 334);
-            this.DefintionBox_3.Name = "DefintionBox_3";
-            this.DefintionBox_3.Size = new System.Drawing.Size(536, 20);
-            this.DefintionBox_3.TabIndex = 12;
+            DefintionBox_3.AccessibleName = " ";
+            DefintionBox_3.Location = new System.Drawing.Point(252, 385);
+            DefintionBox_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DefintionBox_3.Name = "DefintionBox_3";
+            DefintionBox_3.Size = new System.Drawing.Size(625, 23);
+            DefintionBox_3.TabIndex = 12;
             // 
             // NumberofEntriesLabel
             // 
-            this.NumberofEntriesLabel.AutoSize = true;
-            this.NumberofEntriesLabel.Location = new System.Drawing.Point(380, 45);
-            this.NumberofEntriesLabel.Name = "NumberofEntriesLabel";
-            this.NumberofEntriesLabel.Size = new System.Drawing.Size(91, 13);
-            this.NumberofEntriesLabel.TabIndex = 15;
-            this.NumberofEntriesLabel.Text = "Number of Entries";
+            NumberofEntriesLabel.AutoSize = true;
+            NumberofEntriesLabel.Location = new System.Drawing.Point(443, 52);
+            NumberofEntriesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            NumberofEntriesLabel.Name = "NumberofEntriesLabel";
+            NumberofEntriesLabel.Size = new System.Drawing.Size(103, 15);
+            NumberofEntriesLabel.TabIndex = 15;
+            NumberofEntriesLabel.Text = "Number of Entries";
             // 
             // SelectEntrylabel
             // 
-            this.SelectEntrylabel.AutoSize = true;
-            this.SelectEntrylabel.Location = new System.Drawing.Point(407, 71);
-            this.SelectEntrylabel.Name = "SelectEntrylabel";
-            this.SelectEntrylabel.Size = new System.Drawing.Size(64, 13);
-            this.SelectEntrylabel.TabIndex = 16;
-            this.SelectEntrylabel.Text = "Select Entry";
+            SelectEntrylabel.AutoSize = true;
+            SelectEntrylabel.Location = new System.Drawing.Point(475, 82);
+            SelectEntrylabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            SelectEntrylabel.Name = "SelectEntrylabel";
+            SelectEntrylabel.Size = new System.Drawing.Size(68, 15);
+            SelectEntrylabel.TabIndex = 16;
+            SelectEntrylabel.Text = "Select Entry";
             // 
             // NumberofEntriesBox
             // 
-            this.NumberofEntriesBox.Location = new System.Drawing.Point(477, 44);
-            this.NumberofEntriesBox.Name = "NumberofEntriesBox";
-            this.NumberofEntriesBox.ReadOnly = true;
-            this.NumberofEntriesBox.Size = new System.Drawing.Size(100, 20);
-            this.NumberofEntriesBox.TabIndex = 17;
-            this.NumberofEntriesBox.TextChanged += new System.EventHandler(this.NumberofEntriesBox_TextChanged);
+            NumberofEntriesBox.Location = new System.Drawing.Point(556, 51);
+            NumberofEntriesBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            NumberofEntriesBox.Name = "NumberofEntriesBox";
+            NumberofEntriesBox.ReadOnly = true;
+            NumberofEntriesBox.Size = new System.Drawing.Size(116, 23);
+            NumberofEntriesBox.TabIndex = 17;
+            NumberofEntriesBox.TextChanged += NumberofEntriesBox_TextChanged;
             // 
             // SelectEntryBox
             // 
-            this.SelectEntryBox.Location = new System.Drawing.Point(477, 70);
-            this.SelectEntryBox.Name = "SelectEntryBox";
-            this.SelectEntryBox.Size = new System.Drawing.Size(100, 20);
-            this.SelectEntryBox.TabIndex = 18;
+            SelectEntryBox.Location = new System.Drawing.Point(556, 81);
+            SelectEntryBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            SelectEntryBox.Name = "SelectEntryBox";
+            SelectEntryBox.Size = new System.Drawing.Size(116, 23);
+            SelectEntryBox.TabIndex = 18;
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(677, 396);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(75, 23);
-            this.AddButton.TabIndex = 19;
-            this.AddButton.Text = "Add";
-            this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            AddButton.Location = new System.Drawing.Point(790, 457);
+            AddButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AddButton.Name = "AddButton";
+            AddButton.Size = new System.Drawing.Size(88, 27);
+            AddButton.TabIndex = 19;
+            AddButton.Text = "Add";
+            AddButton.UseVisualStyleBackColor = true;
+            AddButton.Click += AddButton_Click;
             // 
             // Defintion_Label_1
             // 
-            this.Defintion_Label_1.AutoSize = true;
-            this.Defintion_Label_1.Location = new System.Drawing.Point(9, 155);
-            this.Defintion_Label_1.Name = "Defintion_Label_1";
-            this.Defintion_Label_1.Size = new System.Drawing.Size(65, 13);
-            this.Defintion_Label_1.TabIndex = 2;
-            this.Defintion_Label_1.Text = "Defintion #1";
+            Defintion_Label_1.AutoSize = true;
+            Defintion_Label_1.Location = new System.Drawing.Point(10, 179);
+            Defintion_Label_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Defintion_Label_1.Name = "Defintion_Label_1";
+            Defintion_Label_1.Size = new System.Drawing.Size(72, 15);
+            Defintion_Label_1.TabIndex = 2;
+            Defintion_Label_1.Text = "Defintion #1";
             // 
             // MeaningAndSentenceLabel
             // 
-            this.MeaningAndSentenceLabel.AutoSize = true;
-            this.MeaningAndSentenceLabel.Location = new System.Drawing.Point(91, 181);
-            this.MeaningAndSentenceLabel.Name = "MeaningAndSentenceLabel";
-            this.MeaningAndSentenceLabel.Size = new System.Drawing.Size(0, 13);
-            this.MeaningAndSentenceLabel.TabIndex = 20;
+            MeaningAndSentenceLabel.AutoSize = true;
+            MeaningAndSentenceLabel.Location = new System.Drawing.Point(106, 209);
+            MeaningAndSentenceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            MeaningAndSentenceLabel.Name = "MeaningAndSentenceLabel";
+            MeaningAndSentenceLabel.Size = new System.Drawing.Size(0, 15);
+            MeaningAndSentenceLabel.TabIndex = 20;
             // 
             // MeaningAndSentenceLabel2
             // 
-            this.MeaningAndSentenceLabel2.AutoSize = true;
-            this.MeaningAndSentenceLabel2.Location = new System.Drawing.Point(91, 232);
-            this.MeaningAndSentenceLabel2.Name = "MeaningAndSentenceLabel2";
-            this.MeaningAndSentenceLabel2.Size = new System.Drawing.Size(0, 13);
-            this.MeaningAndSentenceLabel2.TabIndex = 21;
+            MeaningAndSentenceLabel2.AutoSize = true;
+            MeaningAndSentenceLabel2.Location = new System.Drawing.Point(106, 268);
+            MeaningAndSentenceLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            MeaningAndSentenceLabel2.Name = "MeaningAndSentenceLabel2";
+            MeaningAndSentenceLabel2.Size = new System.Drawing.Size(0, 15);
+            MeaningAndSentenceLabel2.TabIndex = 21;
             // 
             // SentenceBox1
             // 
-            this.SentenceBox1.AccessibleName = " ";
-            this.SentenceBox1.Location = new System.Drawing.Point(216, 204);
-            this.SentenceBox1.Name = "SentenceBox1";
-            this.SentenceBox1.Size = new System.Drawing.Size(536, 20);
-            this.SentenceBox1.TabIndex = 23;
+            SentenceBox1.AccessibleName = " ";
+            SentenceBox1.Location = new System.Drawing.Point(252, 235);
+            SentenceBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            SentenceBox1.Name = "SentenceBox1";
+            SentenceBox1.Size = new System.Drawing.Size(625, 23);
+            SentenceBox1.TabIndex = 23;
             // 
             // SentenceBox2
             // 
-            this.SentenceBox2.AccessibleName = " ";
-            this.SentenceBox2.Location = new System.Drawing.Point(216, 282);
-            this.SentenceBox2.Name = "SentenceBox2";
-            this.SentenceBox2.Size = new System.Drawing.Size(536, 20);
-            this.SentenceBox2.TabIndex = 24;
+            SentenceBox2.AccessibleName = " ";
+            SentenceBox2.Location = new System.Drawing.Point(252, 325);
+            SentenceBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            SentenceBox2.Name = "SentenceBox2";
+            SentenceBox2.Size = new System.Drawing.Size(625, 23);
+            SentenceBox2.TabIndex = 24;
             // 
             // SentenceBox3
             // 
-            this.SentenceBox3.AccessibleName = " ";
-            this.SentenceBox3.Location = new System.Drawing.Point(216, 360);
-            this.SentenceBox3.Name = "SentenceBox3";
-            this.SentenceBox3.Size = new System.Drawing.Size(536, 20);
-            this.SentenceBox3.TabIndex = 25;
+            SentenceBox3.AccessibleName = " ";
+            SentenceBox3.Location = new System.Drawing.Point(252, 415);
+            SentenceBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            SentenceBox3.Name = "SentenceBox3";
+            SentenceBox3.Size = new System.Drawing.Size(625, 23);
+            SentenceBox3.TabIndex = 25;
             // 
             // UpdateButton
             // 
-            this.UpdateButton.BackColor = System.Drawing.Color.RosyBrown;
-            this.UpdateButton.Location = new System.Drawing.Point(583, 67);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(75, 23);
-            this.UpdateButton.TabIndex = 26;
-            this.UpdateButton.Text = "Update";
-            this.UpdateButton.UseVisualStyleBackColor = false;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            UpdateButton.BackColor = System.Drawing.Color.RosyBrown;
+            UpdateButton.Location = new System.Drawing.Point(680, 77);
+            UpdateButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            UpdateButton.Name = "UpdateButton";
+            UpdateButton.Size = new System.Drawing.Size(88, 27);
+            UpdateButton.TabIndex = 26;
+            UpdateButton.Text = "Update";
+            UpdateButton.UseVisualStyleBackColor = false;
+            UpdateButton.Click += UpdateButton_Click;
             // 
             // Line
             // 
-            this.Line.AutoSize = true;
-            this.Line.Location = new System.Drawing.Point(-1, 422);
-            this.Line.Name = "Line";
-            this.Line.Size = new System.Drawing.Size(808, 13);
-            this.Line.TabIndex = 27;
-            this.Line.Text = resources.GetString("Line.Text");
+            Line.AutoSize = true;
+            Line.Location = new System.Drawing.Point(-1, 487);
+            Line.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Line.Name = "Line";
+            Line.Size = new System.Drawing.Size(1342, 15);
+            Line.TabIndex = 27;
+            Line.Text = resources.GetString("Line.Text");
             // 
             // Word
             // 
-            this.Word.AutoSize = true;
-            this.Word.Location = new System.Drawing.Point(27, 552);
-            this.Word.Name = "Word";
-            this.Word.Size = new System.Drawing.Size(36, 13);
-            this.Word.TabIndex = 28;
-            this.Word.Text = "Word:";
+            Word.AutoSize = true;
+            Word.Location = new System.Drawing.Point(17, 633);
+            Word.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Word.Name = "Word";
+            Word.Size = new System.Drawing.Size(39, 15);
+            Word.TabIndex = 28;
+            Word.Text = "Word:";
             // 
             // TestWordBox
             // 
-            this.TestWordBox.Location = new System.Drawing.Point(85, 549);
-            this.TestWordBox.Name = "TestWordBox";
-            this.TestWordBox.ReadOnly = true;
-            this.TestWordBox.Size = new System.Drawing.Size(277, 20);
-            this.TestWordBox.TabIndex = 33;
+            TestWordBox.Location = new System.Drawing.Point(84, 633);
+            TestWordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            TestWordBox.Name = "TestWordBox";
+            TestWordBox.ReadOnly = true;
+            TestWordBox.Size = new System.Drawing.Size(290, 23);
+            TestWordBox.TabIndex = 33;
             // 
             // AnswerA
             // 
-            this.AnswerA.Location = new System.Drawing.Point(54, 589);
-            this.AnswerA.Name = "AnswerA";
-            this.AnswerA.ReadOnly = true;
-            this.AnswerA.Size = new System.Drawing.Size(697, 20);
-            this.AnswerA.TabIndex = 34;
+            AnswerA.Location = new System.Drawing.Point(63, 680);
+            AnswerA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerA.Name = "AnswerA";
+            AnswerA.ReadOnly = true;
+            AnswerA.Size = new System.Drawing.Size(812, 23);
+            AnswerA.TabIndex = 34;
             // 
             // AnswerB
             // 
-            this.AnswerB.Location = new System.Drawing.Point(54, 615);
-            this.AnswerB.Name = "AnswerB";
-            this.AnswerB.ReadOnly = true;
-            this.AnswerB.Size = new System.Drawing.Size(697, 20);
-            this.AnswerB.TabIndex = 35;
+            AnswerB.Location = new System.Drawing.Point(63, 710);
+            AnswerB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerB.Name = "AnswerB";
+            AnswerB.ReadOnly = true;
+            AnswerB.Size = new System.Drawing.Size(812, 23);
+            AnswerB.TabIndex = 35;
             // 
             // AnswerC
             // 
-            this.AnswerC.Location = new System.Drawing.Point(54, 640);
-            this.AnswerC.Name = "AnswerC";
-            this.AnswerC.ReadOnly = true;
-            this.AnswerC.Size = new System.Drawing.Size(697, 20);
-            this.AnswerC.TabIndex = 36;
+            AnswerC.Location = new System.Drawing.Point(63, 738);
+            AnswerC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerC.Name = "AnswerC";
+            AnswerC.ReadOnly = true;
+            AnswerC.Size = new System.Drawing.Size(812, 23);
+            AnswerC.TabIndex = 36;
             // 
             // AnswerD
             // 
-            this.AnswerD.Location = new System.Drawing.Point(54, 666);
-            this.AnswerD.Name = "AnswerD";
-            this.AnswerD.ReadOnly = true;
-            this.AnswerD.Size = new System.Drawing.Size(697, 20);
-            this.AnswerD.TabIndex = 37;
+            AnswerD.Location = new System.Drawing.Point(63, 768);
+            AnswerD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerD.Name = "AnswerD";
+            AnswerD.ReadOnly = true;
+            AnswerD.Size = new System.Drawing.Size(812, 23);
+            AnswerD.TabIndex = 37;
             // 
             // Result_Box
             // 
-            this.Result_Box.Location = new System.Drawing.Point(182, 711);
-            this.Result_Box.Name = "Result_Box";
-            this.Result_Box.ReadOnly = true;
-            this.Result_Box.Size = new System.Drawing.Size(193, 20);
-            this.Result_Box.TabIndex = 41;
+            Result_Box.Location = new System.Drawing.Point(212, 820);
+            Result_Box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Result_Box.Name = "Result_Box";
+            Result_Box.ReadOnly = true;
+            Result_Box.Size = new System.Drawing.Size(224, 23);
+            Result_Box.TabIndex = 41;
             // 
             // TextBox1
             // 
-            this.TextBox1.AutoSize = true;
-            this.TextBox1.Location = new System.Drawing.Point(123, 714);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(53, 13);
-            this.TextBox1.TabIndex = 42;
-            this.TextBox1.Text = "You are...";
+            TextBox1.AutoSize = true;
+            TextBox1.Location = new System.Drawing.Point(144, 824);
+            TextBox1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            TextBox1.Name = "TextBox1";
+            TextBox1.Size = new System.Drawing.Size(55, 15);
+            TextBox1.TabIndex = 42;
+            TextBox1.Text = "You are...";
             // 
             // TestButton
             // 
-            this.TestButton.Location = new System.Drawing.Point(409, 467);
-            this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(75, 23);
-            this.TestButton.TabIndex = 44;
-            this.TestButton.Text = "Test";
-            this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
+            TestButton.Location = new System.Drawing.Point(477, 539);
+            TestButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            TestButton.Name = "TestButton";
+            TestButton.Size = new System.Drawing.Size(88, 27);
+            TestButton.TabIndex = 44;
+            TestButton.Text = "Test";
+            TestButton.UseVisualStyleBackColor = true;
+            TestButton.Click += TestButton_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(123, 749);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Percent Correct";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(144, 864);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(89, 15);
+            label1.TabIndex = 45;
+            label1.Text = "Percent Correct";
             // 
             // PercentCorrectBox
             // 
-            this.PercentCorrectBox.Location = new System.Drawing.Point(203, 746);
-            this.PercentCorrectBox.Name = "PercentCorrectBox";
-            this.PercentCorrectBox.ReadOnly = true;
-            this.PercentCorrectBox.Size = new System.Drawing.Size(73, 20);
-            this.PercentCorrectBox.TabIndex = 46;
+            PercentCorrectBox.Location = new System.Drawing.Point(237, 861);
+            PercentCorrectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PercentCorrectBox.Name = "PercentCorrectBox";
+            PercentCorrectBox.ReadOnly = true;
+            PercentCorrectBox.Size = new System.Drawing.Size(84, 23);
+            PercentCorrectBox.TabIndex = 46;
             // 
             // AButton
             // 
-            this.AButton.Location = new System.Drawing.Point(11, 588);
-            this.AButton.Name = "AButton";
-            this.AButton.Size = new System.Drawing.Size(37, 20);
-            this.AButton.TabIndex = 47;
-            this.AButton.Text = "A";
-            this.AButton.UseVisualStyleBackColor = true;
-            this.AButton.Click += new System.EventHandler(this.AButton_Click);
+            AButton.Location = new System.Drawing.Point(13, 678);
+            AButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AButton.Name = "AButton";
+            AButton.Size = new System.Drawing.Size(43, 23);
+            AButton.TabIndex = 47;
+            AButton.Text = "A";
+            AButton.UseVisualStyleBackColor = true;
+            AButton.Click += AButton_Click;
             // 
             // BButton
             // 
-            this.BButton.Location = new System.Drawing.Point(11, 614);
-            this.BButton.Name = "BButton";
-            this.BButton.Size = new System.Drawing.Size(37, 20);
-            this.BButton.TabIndex = 48;
-            this.BButton.Text = "B";
-            this.BButton.UseVisualStyleBackColor = true;
-            this.BButton.Click += new System.EventHandler(this.BButton_Click);
+            BButton.Location = new System.Drawing.Point(13, 708);
+            BButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            BButton.Name = "BButton";
+            BButton.Size = new System.Drawing.Size(43, 23);
+            BButton.TabIndex = 48;
+            BButton.Text = "B";
+            BButton.UseVisualStyleBackColor = true;
+            BButton.Click += BButton_Click;
             // 
             // CButton
             // 
-            this.CButton.Location = new System.Drawing.Point(11, 640);
-            this.CButton.Name = "CButton";
-            this.CButton.Size = new System.Drawing.Size(37, 20);
-            this.CButton.TabIndex = 49;
-            this.CButton.Text = "C";
-            this.CButton.UseVisualStyleBackColor = true;
-            this.CButton.Click += new System.EventHandler(this.CButton_Click);
+            CButton.Location = new System.Drawing.Point(13, 738);
+            CButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            CButton.Name = "CButton";
+            CButton.Size = new System.Drawing.Size(43, 23);
+            CButton.TabIndex = 49;
+            CButton.Text = "C";
+            CButton.UseVisualStyleBackColor = true;
+            CButton.Click += CButton_Click;
             // 
             // DButton
             // 
-            this.DButton.Location = new System.Drawing.Point(11, 666);
-            this.DButton.Name = "DButton";
-            this.DButton.Size = new System.Drawing.Size(37, 20);
-            this.DButton.TabIndex = 50;
-            this.DButton.Text = "D";
-            this.DButton.UseVisualStyleBackColor = true;
-            this.DButton.Click += new System.EventHandler(this.DButton_Click);
+            DButton.Location = new System.Drawing.Point(13, 768);
+            DButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DButton.Name = "DButton";
+            DButton.Size = new System.Drawing.Size(43, 23);
+            DButton.TabIndex = 50;
+            DButton.Text = "D";
+            DButton.UseVisualStyleBackColor = true;
+            DButton.Click += DButton_Click;
             // 
             // Whatquestiontext
             // 
-            this.Whatquestiontext.AutoSize = true;
-            this.Whatquestiontext.Location = new System.Drawing.Point(470, 552);
-            this.Whatquestiontext.Name = "Whatquestiontext";
-            this.Whatquestiontext.Size = new System.Drawing.Size(83, 13);
-            this.Whatquestiontext.TabIndex = 51;
-            this.Whatquestiontext.Text = "Question Count:";
+            Whatquestiontext.AutoSize = true;
+            Whatquestiontext.Location = new System.Drawing.Point(548, 637);
+            Whatquestiontext.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Whatquestiontext.Name = "Whatquestiontext";
+            Whatquestiontext.Size = new System.Drawing.Size(94, 15);
+            Whatquestiontext.TabIndex = 51;
+            Whatquestiontext.Text = "Question Count:";
             // 
             // QuestionCountBox
             // 
-            this.QuestionCountBox.Location = new System.Drawing.Point(559, 549);
-            this.QuestionCountBox.Name = "QuestionCountBox";
-            this.QuestionCountBox.ReadOnly = true;
-            this.QuestionCountBox.Size = new System.Drawing.Size(98, 20);
-            this.QuestionCountBox.TabIndex = 52;
+            QuestionCountBox.Location = new System.Drawing.Point(652, 633);
+            QuestionCountBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            QuestionCountBox.Name = "QuestionCountBox";
+            QuestionCountBox.ReadOnly = true;
+            QuestionCountBox.Size = new System.Drawing.Size(114, 23);
+            QuestionCountBox.TabIndex = 52;
             // 
             // ResetButton
             // 
-            this.ResetButton.Location = new System.Drawing.Point(676, 549);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(75, 23);
-            this.ResetButton.TabIndex = 53;
-            this.ResetButton.Text = "Reset";
-            this.ResetButton.UseVisualStyleBackColor = true;
-            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            ResetButton.Location = new System.Drawing.Point(789, 633);
+            ResetButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ResetButton.Name = "ResetButton";
+            ResetButton.Size = new System.Drawing.Size(88, 27);
+            ResetButton.TabIndex = 53;
+            ResetButton.Text = "Reset";
+            ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.Click += ResetButton_Click;
             // 
             // NumberCorrectBox
             // 
-            this.NumberCorrectBox.Location = new System.Drawing.Point(282, 746);
-            this.NumberCorrectBox.Name = "NumberCorrectBox";
-            this.NumberCorrectBox.ReadOnly = true;
-            this.NumberCorrectBox.Size = new System.Drawing.Size(93, 20);
-            this.NumberCorrectBox.TabIndex = 54;
+            NumberCorrectBox.Location = new System.Drawing.Point(329, 861);
+            NumberCorrectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            NumberCorrectBox.Name = "NumberCorrectBox";
+            NumberCorrectBox.ReadOnly = true;
+            NumberCorrectBox.Size = new System.Drawing.Size(108, 23);
+            NumberCorrectBox.TabIndex = 54;
             // 
             // ModesBox
             // 
-            this.ModesBox.Controls.Add(this.ReverseAlphabeticalMode);
-            this.ModesBox.Controls.Add(this.AlphabeticalMode);
-            this.ModesBox.Controls.Add(this.ReverseOrderMode);
-            this.ModesBox.Controls.Add(this.OrderMode);
-            this.ModesBox.Controls.Add(this.RandomMode);
-            this.ModesBox.Location = new System.Drawing.Point(72, 448);
-            this.ModesBox.Name = "ModesBox";
-            this.ModesBox.Size = new System.Drawing.Size(249, 63);
-            this.ModesBox.TabIndex = 55;
-            this.ModesBox.TabStop = false;
-            this.ModesBox.Text = "Test Modes";
+            ModesBox.Controls.Add(ReverseAlphabeticalMode);
+            ModesBox.Controls.Add(AlphabeticalMode);
+            ModesBox.Controls.Add(ReverseOrderMode);
+            ModesBox.Controls.Add(OrderMode);
+            ModesBox.Controls.Add(RandomMode);
+            ModesBox.Location = new System.Drawing.Point(84, 517);
+            ModesBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ModesBox.Name = "ModesBox";
+            ModesBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ModesBox.Size = new System.Drawing.Size(290, 73);
+            ModesBox.TabIndex = 55;
+            ModesBox.TabStop = false;
+            ModesBox.Text = "Test Modes";
             // 
             // ReverseAlphabeticalMode
             // 
-            this.ReverseAlphabeticalMode.AutoSize = true;
-            this.ReverseAlphabeticalMode.Location = new System.Drawing.Point(117, 40);
-            this.ReverseAlphabeticalMode.Name = "ReverseAlphabeticalMode";
-            this.ReverseAlphabeticalMode.Size = new System.Drawing.Size(126, 17);
-            this.ReverseAlphabeticalMode.TabIndex = 4;
-            this.ReverseAlphabeticalMode.TabStop = true;
-            this.ReverseAlphabeticalMode.Text = "Reverse Alphabetical";
-            this.ReverseAlphabeticalMode.UseVisualStyleBackColor = true;
-            this.ReverseAlphabeticalMode.Click += new System.EventHandler(this.ReverseAlphabeticalMode_Click);
+            ReverseAlphabeticalMode.AutoSize = true;
+            ReverseAlphabeticalMode.Location = new System.Drawing.Point(136, 46);
+            ReverseAlphabeticalMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ReverseAlphabeticalMode.Name = "ReverseAlphabeticalMode";
+            ReverseAlphabeticalMode.Size = new System.Drawing.Size(134, 19);
+            ReverseAlphabeticalMode.TabIndex = 4;
+            ReverseAlphabeticalMode.TabStop = true;
+            ReverseAlphabeticalMode.Text = "Reverse Alphabetical";
+            ReverseAlphabeticalMode.UseVisualStyleBackColor = true;
+            ReverseAlphabeticalMode.Click += ReverseAlphabeticalMode_Click;
             // 
             // AlphabeticalMode
             // 
-            this.AlphabeticalMode.AutoSize = true;
-            this.AlphabeticalMode.Location = new System.Drawing.Point(6, 40);
-            this.AlphabeticalMode.Name = "AlphabeticalMode";
-            this.AlphabeticalMode.Size = new System.Drawing.Size(113, 17);
-            this.AlphabeticalMode.TabIndex = 3;
-            this.AlphabeticalMode.TabStop = true;
-            this.AlphabeticalMode.Text = "Alphabetical Mode";
-            this.AlphabeticalMode.UseVisualStyleBackColor = true;
-            this.AlphabeticalMode.Click += new System.EventHandler(this.AlphabeticalMode_Click);
+            AlphabeticalMode.AutoSize = true;
+            AlphabeticalMode.Location = new System.Drawing.Point(7, 46);
+            AlphabeticalMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AlphabeticalMode.Name = "AlphabeticalMode";
+            AlphabeticalMode.Size = new System.Drawing.Size(125, 19);
+            AlphabeticalMode.TabIndex = 3;
+            AlphabeticalMode.TabStop = true;
+            AlphabeticalMode.Text = "Alphabetical Mode";
+            AlphabeticalMode.UseVisualStyleBackColor = true;
+            AlphabeticalMode.Click += AlphabeticalMode_Click;
             // 
             // ReverseOrderMode
             // 
-            this.ReverseOrderMode.AutoSize = true;
-            this.ReverseOrderMode.Location = new System.Drawing.Point(130, 19);
-            this.ReverseOrderMode.Name = "ReverseOrderMode";
-            this.ReverseOrderMode.Size = new System.Drawing.Size(94, 17);
-            this.ReverseOrderMode.TabIndex = 2;
-            this.ReverseOrderMode.TabStop = true;
-            this.ReverseOrderMode.Text = "Reverse Order";
-            this.ReverseOrderMode.UseVisualStyleBackColor = true;
-            this.ReverseOrderMode.Click += new System.EventHandler(this.ReverseOrderMode_Click);
+            ReverseOrderMode.AutoSize = true;
+            ReverseOrderMode.Location = new System.Drawing.Point(152, 22);
+            ReverseOrderMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            ReverseOrderMode.Name = "ReverseOrderMode";
+            ReverseOrderMode.Size = new System.Drawing.Size(98, 19);
+            ReverseOrderMode.TabIndex = 2;
+            ReverseOrderMode.TabStop = true;
+            ReverseOrderMode.Text = "Reverse Order";
+            ReverseOrderMode.UseVisualStyleBackColor = true;
+            ReverseOrderMode.Click += ReverseOrderMode_Click;
             // 
             // OrderMode
             // 
-            this.OrderMode.AutoSize = true;
-            this.OrderMode.Location = new System.Drawing.Point(77, 19);
-            this.OrderMode.Name = "OrderMode";
-            this.OrderMode.Size = new System.Drawing.Size(51, 17);
-            this.OrderMode.TabIndex = 1;
-            this.OrderMode.TabStop = true;
-            this.OrderMode.Text = "Order";
-            this.OrderMode.UseVisualStyleBackColor = true;
-            this.OrderMode.Click += new System.EventHandler(this.OrderMode_Click);
+            OrderMode.AutoSize = true;
+            OrderMode.Location = new System.Drawing.Point(90, 22);
+            OrderMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            OrderMode.Name = "OrderMode";
+            OrderMode.Size = new System.Drawing.Size(55, 19);
+            OrderMode.TabIndex = 1;
+            OrderMode.TabStop = true;
+            OrderMode.Text = "Order";
+            OrderMode.UseVisualStyleBackColor = true;
+            OrderMode.Click += OrderMode_Click;
             // 
             // RandomMode
             // 
-            this.RandomMode.AutoSize = true;
-            this.RandomMode.Checked = true;
-            this.RandomMode.Location = new System.Drawing.Point(6, 19);
-            this.RandomMode.Name = "RandomMode";
-            this.RandomMode.Size = new System.Drawing.Size(65, 17);
-            this.RandomMode.TabIndex = 0;
-            this.RandomMode.TabStop = true;
-            this.RandomMode.Text = "Random";
-            this.RandomMode.UseVisualStyleBackColor = true;
-            this.RandomMode.Click += new System.EventHandler(this.RandomMode_Click);
+            RandomMode.AutoSize = true;
+            RandomMode.Checked = true;
+            RandomMode.Location = new System.Drawing.Point(7, 22);
+            RandomMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            RandomMode.Name = "RandomMode";
+            RandomMode.Size = new System.Drawing.Size(70, 19);
+            RandomMode.TabIndex = 0;
+            RandomMode.TabStop = true;
+            RandomMode.Text = "Random";
+            RandomMode.UseVisualStyleBackColor = true;
+            RandomMode.Click += RandomMode_Click;
             // 
             // DefinitonLabel
             // 
-            this.DefinitonLabel.AutoSize = true;
-            this.DefinitonLabel.Location = new System.Drawing.Point(159, 181);
-            this.DefinitonLabel.Name = "DefinitonLabel";
-            this.DefinitonLabel.Size = new System.Drawing.Size(51, 13);
-            this.DefinitonLabel.TabIndex = 56;
-            this.DefinitonLabel.Text = "Definition";
+            DefinitonLabel.AutoSize = true;
+            DefinitonLabel.Location = new System.Drawing.Point(186, 209);
+            DefinitonLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            DefinitonLabel.Name = "DefinitonLabel";
+            DefinitonLabel.Size = new System.Drawing.Size(59, 15);
+            DefinitonLabel.TabIndex = 56;
+            DefinitonLabel.Text = "Definition";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(376, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 57;
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(439, 434);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(0, 15);
+            label3.TabIndex = 57;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(154, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
-            this.label4.TabIndex = 58;
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(180, 268);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(0, 15);
+            label4.TabIndex = 58;
             // 
             // PartOfSpeech1
             // 
-            this.PartOfSpeech1.Location = new System.Drawing.Point(216, 152);
-            this.PartOfSpeech1.Name = "PartOfSpeech1";
-            this.PartOfSpeech1.Size = new System.Drawing.Size(255, 20);
-            this.PartOfSpeech1.TabIndex = 59;
+            PartOfSpeech1.Location = new System.Drawing.Point(252, 175);
+            PartOfSpeech1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PartOfSpeech1.Name = "PartOfSpeech1";
+            PartOfSpeech1.Size = new System.Drawing.Size(297, 23);
+            PartOfSpeech1.TabIndex = 59;
             // 
             // PoStext
             // 
-            this.PoStext.AutoSize = true;
-            this.PoStext.Location = new System.Drawing.Point(132, 155);
-            this.PoStext.Name = "PoStext";
-            this.PoStext.Size = new System.Drawing.Size(78, 13);
-            this.PoStext.TabIndex = 60;
-            this.PoStext.Text = "Part of Speech";
+            PoStext.AutoSize = true;
+            PoStext.Location = new System.Drawing.Point(154, 179);
+            PoStext.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            PoStext.Name = "PoStext";
+            PoStext.Size = new System.Drawing.Size(83, 15);
+            PoStext.TabIndex = 60;
+            PoStext.Text = "Part of Speech";
             // 
             // SentenceLabel
             // 
-            this.SentenceLabel.AutoSize = true;
-            this.SentenceLabel.Location = new System.Drawing.Point(159, 207);
-            this.SentenceLabel.Name = "SentenceLabel";
-            this.SentenceLabel.Size = new System.Drawing.Size(53, 13);
-            this.SentenceLabel.TabIndex = 61;
-            this.SentenceLabel.Text = "Sentence";
+            SentenceLabel.AutoSize = true;
+            SentenceLabel.Location = new System.Drawing.Point(186, 239);
+            SentenceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            SentenceLabel.Name = "SentenceLabel";
+            SentenceLabel.Size = new System.Drawing.Size(55, 15);
+            SentenceLabel.TabIndex = 61;
+            SentenceLabel.Text = "Sentence";
             // 
             // PartOfSpeech2
             // 
-            this.PartOfSpeech2.Location = new System.Drawing.Point(216, 230);
-            this.PartOfSpeech2.Name = "PartOfSpeech2";
-            this.PartOfSpeech2.Size = new System.Drawing.Size(255, 20);
-            this.PartOfSpeech2.TabIndex = 62;
+            PartOfSpeech2.Location = new System.Drawing.Point(252, 265);
+            PartOfSpeech2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PartOfSpeech2.Name = "PartOfSpeech2";
+            PartOfSpeech2.Size = new System.Drawing.Size(297, 23);
+            PartOfSpeech2.TabIndex = 62;
             // 
             // PoStext2
             // 
-            this.PoStext2.AutoSize = true;
-            this.PoStext2.Location = new System.Drawing.Point(132, 233);
-            this.PoStext2.Name = "PoStext2";
-            this.PoStext2.Size = new System.Drawing.Size(78, 13);
-            this.PoStext2.TabIndex = 63;
-            this.PoStext2.Text = "Part of Speech";
+            PoStext2.AutoSize = true;
+            PoStext2.Location = new System.Drawing.Point(154, 269);
+            PoStext2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            PoStext2.Name = "PoStext2";
+            PoStext2.Size = new System.Drawing.Size(83, 15);
+            PoStext2.TabIndex = 63;
+            PoStext2.Text = "Part of Speech";
             // 
             // DefinitonLabel2
             // 
-            this.DefinitonLabel2.AutoSize = true;
-            this.DefinitonLabel2.Location = new System.Drawing.Point(159, 259);
-            this.DefinitonLabel2.Name = "DefinitonLabel2";
-            this.DefinitonLabel2.Size = new System.Drawing.Size(51, 13);
-            this.DefinitonLabel2.TabIndex = 64;
-            this.DefinitonLabel2.Text = "Definition";
+            DefinitonLabel2.AutoSize = true;
+            DefinitonLabel2.Location = new System.Drawing.Point(186, 299);
+            DefinitonLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            DefinitonLabel2.Name = "DefinitonLabel2";
+            DefinitonLabel2.Size = new System.Drawing.Size(59, 15);
+            DefinitonLabel2.TabIndex = 64;
+            DefinitonLabel2.Text = "Definition";
             // 
             // SentenceLabel2
             // 
-            this.SentenceLabel2.AutoSize = true;
-            this.SentenceLabel2.Location = new System.Drawing.Point(157, 285);
-            this.SentenceLabel2.Name = "SentenceLabel2";
-            this.SentenceLabel2.Size = new System.Drawing.Size(53, 13);
-            this.SentenceLabel2.TabIndex = 65;
-            this.SentenceLabel2.Text = "Sentence";
+            SentenceLabel2.AutoSize = true;
+            SentenceLabel2.Location = new System.Drawing.Point(183, 329);
+            SentenceLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            SentenceLabel2.Name = "SentenceLabel2";
+            SentenceLabel2.Size = new System.Drawing.Size(55, 15);
+            SentenceLabel2.TabIndex = 65;
+            SentenceLabel2.Text = "Sentence";
             // 
             // PartOfSpeech3
             // 
-            this.PartOfSpeech3.Location = new System.Drawing.Point(216, 308);
-            this.PartOfSpeech3.Name = "PartOfSpeech3";
-            this.PartOfSpeech3.Size = new System.Drawing.Size(255, 20);
-            this.PartOfSpeech3.TabIndex = 66;
+            PartOfSpeech3.Location = new System.Drawing.Point(252, 355);
+            PartOfSpeech3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PartOfSpeech3.Name = "PartOfSpeech3";
+            PartOfSpeech3.Size = new System.Drawing.Size(297, 23);
+            PartOfSpeech3.TabIndex = 66;
             // 
             // PoS3text
             // 
-            this.PoS3text.AutoSize = true;
-            this.PoS3text.Location = new System.Drawing.Point(134, 311);
-            this.PoS3text.Name = "PoS3text";
-            this.PoS3text.Size = new System.Drawing.Size(78, 13);
-            this.PoS3text.TabIndex = 67;
-            this.PoS3text.Text = "Part of Speech";
+            PoS3text.AutoSize = true;
+            PoS3text.Location = new System.Drawing.Point(156, 359);
+            PoS3text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            PoS3text.Name = "PoS3text";
+            PoS3text.Size = new System.Drawing.Size(83, 15);
+            PoS3text.TabIndex = 67;
+            PoS3text.Text = "Part of Speech";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Definition";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(186, 389);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(59, 15);
+            label2.TabIndex = 68;
+            label2.Text = "Definition";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(159, 363);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 69;
-            this.label5.Text = "Sentence";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(186, 419);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(55, 15);
+            label5.TabIndex = 69;
+            label5.Text = "Sentence";
             // 
             // VocabMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 781);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.PoS3text);
-            this.Controls.Add(this.PartOfSpeech3);
-            this.Controls.Add(this.SentenceLabel2);
-            this.Controls.Add(this.DefinitonLabel2);
-            this.Controls.Add(this.PoStext2);
-            this.Controls.Add(this.PartOfSpeech2);
-            this.Controls.Add(this.SentenceLabel);
-            this.Controls.Add(this.PoStext);
-            this.Controls.Add(this.PartOfSpeech1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.DefinitonLabel);
-            this.Controls.Add(this.ModesBox);
-            this.Controls.Add(this.NumberCorrectBox);
-            this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.QuestionCountBox);
-            this.Controls.Add(this.Whatquestiontext);
-            this.Controls.Add(this.DButton);
-            this.Controls.Add(this.CButton);
-            this.Controls.Add(this.BButton);
-            this.Controls.Add(this.AButton);
-            this.Controls.Add(this.PercentCorrectBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TestButton);
-            this.Controls.Add(this.TextBox1);
-            this.Controls.Add(this.Result_Box);
-            this.Controls.Add(this.AnswerD);
-            this.Controls.Add(this.AnswerC);
-            this.Controls.Add(this.AnswerB);
-            this.Controls.Add(this.AnswerA);
-            this.Controls.Add(this.TestWordBox);
-            this.Controls.Add(this.Word);
-            this.Controls.Add(this.Line);
-            this.Controls.Add(this.UpdateButton);
-            this.Controls.Add(this.SentenceBox3);
-            this.Controls.Add(this.SentenceBox2);
-            this.Controls.Add(this.SentenceBox1);
-            this.Controls.Add(this.MeaningAndSentenceLabel2);
-            this.Controls.Add(this.MeaningAndSentenceLabel);
-            this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.SelectEntryBox);
-            this.Controls.Add(this.NumberofEntriesBox);
-            this.Controls.Add(this.SelectEntrylabel);
-            this.Controls.Add(this.NumberofEntriesLabel);
-            this.Controls.Add(this.DefintionBox_3);
-            this.Controls.Add(this.DefintionBox_2);
-            this.Controls.Add(this.Defintion_Label_3);
-            this.Controls.Add(this.Defintion_Label_2);
-            this.Controls.Add(this.Save_Button);
-            this.Controls.Add(this.DefintionBox_1);
-            this.Controls.Add(this.WordBox);
-            this.Controls.Add(this.OpenButton);
-            this.Controls.Add(this.FileNameBox);
-            this.Controls.Add(this.Defintion_Label_1);
-            this.Controls.Add(this.Word_Label);
-            this.Name = "VocabMainForm";
-            this.Text = "Form1";
-            this.ModesBox.ResumeLayout(false);
-            this.ModesBox.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(950, 901);
+            Controls.Add(label5);
+            Controls.Add(label2);
+            Controls.Add(PoS3text);
+            Controls.Add(PartOfSpeech3);
+            Controls.Add(SentenceLabel2);
+            Controls.Add(DefinitonLabel2);
+            Controls.Add(PoStext2);
+            Controls.Add(PartOfSpeech2);
+            Controls.Add(SentenceLabel);
+            Controls.Add(PoStext);
+            Controls.Add(PartOfSpeech1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(DefinitonLabel);
+            Controls.Add(ModesBox);
+            Controls.Add(NumberCorrectBox);
+            Controls.Add(ResetButton);
+            Controls.Add(QuestionCountBox);
+            Controls.Add(Whatquestiontext);
+            Controls.Add(DButton);
+            Controls.Add(CButton);
+            Controls.Add(BButton);
+            Controls.Add(AButton);
+            Controls.Add(PercentCorrectBox);
+            Controls.Add(label1);
+            Controls.Add(TestButton);
+            Controls.Add(TextBox1);
+            Controls.Add(Result_Box);
+            Controls.Add(AnswerD);
+            Controls.Add(AnswerC);
+            Controls.Add(AnswerB);
+            Controls.Add(AnswerA);
+            Controls.Add(TestWordBox);
+            Controls.Add(Word);
+            Controls.Add(Line);
+            Controls.Add(UpdateButton);
+            Controls.Add(SentenceBox3);
+            Controls.Add(SentenceBox2);
+            Controls.Add(SentenceBox1);
+            Controls.Add(MeaningAndSentenceLabel2);
+            Controls.Add(MeaningAndSentenceLabel);
+            Controls.Add(AddButton);
+            Controls.Add(SelectEntryBox);
+            Controls.Add(NumberofEntriesBox);
+            Controls.Add(SelectEntrylabel);
+            Controls.Add(NumberofEntriesLabel);
+            Controls.Add(DefintionBox_3);
+            Controls.Add(DefintionBox_2);
+            Controls.Add(Defintion_Label_3);
+            Controls.Add(Defintion_Label_2);
+            Controls.Add(Save_Button);
+            Controls.Add(DefintionBox_1);
+            Controls.Add(WordBox);
+            Controls.Add(OpenButton);
+            Controls.Add(FileNameBox);
+            Controls.Add(Defintion_Label_1);
+            Controls.Add(Word_Label);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "VocabMainForm";
+            Text = "Form1";
+            ModesBox.ResumeLayout(false);
+            ModesBox.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

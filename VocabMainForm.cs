@@ -190,13 +190,6 @@ namespace Vocabulary
             NumberofEntriesBox.Text = _wordEntries.Count.ToString();
         }
 
-        // The code below is specific for the test
-
-        int _correctBoxIndex = -1;
-        int _numberOfTest = 0;
-        int _currentTest = 0;
-        int _numberCorrect = 0;
-
         private void TestButton_Click(object sender, EventArgs e)
         {
             if (_testRunning)
@@ -204,11 +197,10 @@ namespace Vocabulary
             DisableMode();
             SetUpTest();
         }
-        
-        private void DisableMode() 
-        { 
+        private void DisableMode()
+        {
             RandomMode.Enabled = false;
-            OrderMode.Enabled = false;    
+            OrderMode.Enabled = false;
             ReverseOrderMode.Enabled = false;
             AlphabeticalMode.Enabled = false;
             ReverseAlphabeticalMode.Enabled = false;
@@ -222,6 +214,18 @@ namespace Vocabulary
             AlphabeticalMode.Enabled = true;
             ReverseAlphabeticalMode.Enabled = true;
         }
+
+        // TEST CODE
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // The code below is specific for the test
+
+        int _correctBoxIndex = -1;
+        int _numberOfTest = 0;
+        int _currentTest = 0;
+        int _numberCorrect = 0;
+        /// </summary>
+
 
         private void SetUpTest()
         {
@@ -264,6 +268,18 @@ namespace Vocabulary
             BButton.Enabled = value;
             CButton.Enabled = value;
             DButton.Enabled = value;
+        }
+
+        private static string ConstructDefinition(Defintion def)
+        {
+            if(def.Partofspeech.Length == 0)
+            {
+                return def.Meaning;
+            }
+            else
+            {
+                return string.Format("({0}) {1}", def.Partofspeech, def.Meaning);
+            }
         }
 
         private void SetEntry()
@@ -309,16 +325,16 @@ namespace Vocabulary
             switch (_correctBoxIndex)
             {
                 case 0:
-                    AnswerA.Text = currentEntry.Definitions[0].Meaning;
+                    AnswerA.Text = ConstructDefinition(currentEntry.Definitions[0]);
                     break;
                 case 1:
-                    AnswerB.Text = currentEntry.Definitions[0].Meaning;
+                    AnswerB.Text = ConstructDefinition(currentEntry.Definitions[0]);
                     break;
                 case 2:
-                    AnswerC.Text = currentEntry.Definitions[0].Meaning;
+                    AnswerC.Text = ConstructDefinition(currentEntry.Definitions[0]);
                     break;
                 case 3:
-                    AnswerD.Text = currentEntry.Definitions[0].Meaning;
+                    AnswerD.Text = ConstructDefinition(currentEntry.Definitions[0]);
                     break;
             }
 
@@ -450,28 +466,28 @@ namespace Vocabulary
             if (correctIndex != 0)  // A box
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerA.Text = _wordEntries[newIndex].Definitions[0].Meaning;
+                AnswerA.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 1)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerB.Text = _wordEntries[newIndex].Definitions[0].Meaning;
+                AnswerB.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 2)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerC.Text = _wordEntries[newIndex].Definitions[0].Meaning;
+                AnswerC.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 3)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerD.Text = _wordEntries[newIndex].Definitions[0].Meaning;
+                AnswerD.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
                 usedDefinitions.Add(newIndex);
             }
 
