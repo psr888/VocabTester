@@ -336,43 +336,47 @@
             // 
             // AnswerA
             // 
-            AnswerA.Location = new System.Drawing.Point(63, 680);
+            AnswerA.Location = new System.Drawing.Point(78, 676);
             AnswerA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerA.Multiline = true;
             AnswerA.Name = "AnswerA";
             AnswerA.ReadOnly = true;
-            AnswerA.Size = new System.Drawing.Size(812, 23);
+            AnswerA.Size = new System.Drawing.Size(812, 46);
             AnswerA.TabIndex = 34;
             // 
             // AnswerB
             // 
-            AnswerB.Location = new System.Drawing.Point(63, 710);
+            AnswerB.Location = new System.Drawing.Point(79, 728);
             AnswerB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerB.Multiline = true;
             AnswerB.Name = "AnswerB";
             AnswerB.ReadOnly = true;
-            AnswerB.Size = new System.Drawing.Size(812, 23);
+            AnswerB.Size = new System.Drawing.Size(812, 46);
             AnswerB.TabIndex = 35;
             // 
             // AnswerC
             // 
-            AnswerC.Location = new System.Drawing.Point(63, 738);
+            AnswerC.Location = new System.Drawing.Point(79, 780);
             AnswerC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerC.Multiline = true;
             AnswerC.Name = "AnswerC";
             AnswerC.ReadOnly = true;
-            AnswerC.Size = new System.Drawing.Size(812, 23);
+            AnswerC.Size = new System.Drawing.Size(812, 46);
             AnswerC.TabIndex = 36;
             // 
             // AnswerD
             // 
-            AnswerD.Location = new System.Drawing.Point(63, 768);
+            AnswerD.Location = new System.Drawing.Point(79, 832);
             AnswerD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AnswerD.Multiline = true;
             AnswerD.Name = "AnswerD";
             AnswerD.ReadOnly = true;
-            AnswerD.Size = new System.Drawing.Size(812, 23);
+            AnswerD.Size = new System.Drawing.Size(812, 46);
             AnswerD.TabIndex = 37;
             // 
             // Result_Box
             // 
-            Result_Box.Location = new System.Drawing.Point(212, 820);
+            Result_Box.Location = new System.Drawing.Point(267, 884);
             Result_Box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Result_Box.Name = "Result_Box";
             Result_Box.ReadOnly = true;
@@ -382,7 +386,7 @@
             // TextBox1
             // 
             TextBox1.AutoSize = true;
-            TextBox1.Location = new System.Drawing.Point(144, 824);
+            TextBox1.Location = new System.Drawing.Point(199, 888);
             TextBox1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             TextBox1.Name = "TextBox1";
             TextBox1.Size = new System.Drawing.Size(55, 15);
@@ -403,7 +407,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(144, 864);
+            label1.Location = new System.Drawing.Point(199, 928);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(89, 15);
@@ -412,7 +416,7 @@
             // 
             // PercentCorrectBox
             // 
-            PercentCorrectBox.Location = new System.Drawing.Point(237, 861);
+            PercentCorrectBox.Location = new System.Drawing.Point(292, 925);
             PercentCorrectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             PercentCorrectBox.Name = "PercentCorrectBox";
             PercentCorrectBox.ReadOnly = true;
@@ -421,7 +425,7 @@
             // 
             // AButton
             // 
-            AButton.Location = new System.Drawing.Point(13, 678);
+            AButton.Location = new System.Drawing.Point(29, 689);
             AButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             AButton.Name = "AButton";
             AButton.Size = new System.Drawing.Size(43, 23);
@@ -432,7 +436,7 @@
             // 
             // BButton
             // 
-            BButton.Location = new System.Drawing.Point(13, 708);
+            BButton.Location = new System.Drawing.Point(28, 740);
             BButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             BButton.Name = "BButton";
             BButton.Size = new System.Drawing.Size(43, 23);
@@ -443,7 +447,7 @@
             // 
             // CButton
             // 
-            CButton.Location = new System.Drawing.Point(13, 738);
+            CButton.Location = new System.Drawing.Point(28, 790);
             CButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             CButton.Name = "CButton";
             CButton.Size = new System.Drawing.Size(43, 23);
@@ -454,7 +458,7 @@
             // 
             // DButton
             // 
-            DButton.Location = new System.Drawing.Point(13, 768);
+            DButton.Location = new System.Drawing.Point(28, 841);
             DButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             DButton.Name = "DButton";
             DButton.Size = new System.Drawing.Size(43, 23);
@@ -495,7 +499,7 @@
             // 
             // NumberCorrectBox
             // 
-            NumberCorrectBox.Location = new System.Drawing.Point(329, 861);
+            NumberCorrectBox.Location = new System.Drawing.Point(384, 925);
             NumberCorrectBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NumberCorrectBox.Name = "NumberCorrectBox";
             NumberCorrectBox.ReadOnly = true;
@@ -720,7 +724,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(950, 901);
+            ClientSize = new System.Drawing.Size(950, 971);
             Controls.Add(label5);
             Controls.Add(label2);
             Controls.Add(PoS3text);

@@ -51,7 +51,7 @@ namespace Vocabulary
                 var def2 = new Defintion();
                 def2.Partofspeech = PartOfSpeech2.Text;
                 def2.Meaning = DefintionBox_2.Text;
-                def2.Sentence = SentenceBox2.Text; 
+                def2.Sentence = SentenceBox2.Text;
 
                 word.Definitions.Add(def2);
             }
@@ -237,11 +237,11 @@ namespace Vocabulary
             }
             else if (_testMode == TestMode.Alphabetical)
             {
-                _workingEntries.Sort((x,y) => string.Compare(x.Word,y.Word));
+                _workingEntries.Sort((x, y) => string.Compare(x.Word, y.Word));
             }
-            else if ( _testMode == TestMode.ReverseAlphabetical)
+            else if (_testMode == TestMode.ReverseAlphabetical)
             {
-                _workingEntries.Sort((y,x) => string.Compare(x.Word,y.Word));
+                _workingEntries.Sort((y, x) => string.Compare(x.Word, y.Word));
             }
 
 
@@ -270,21 +270,43 @@ namespace Vocabulary
             DButton.Enabled = value;
         }
 
-        private static string ConstructDefinition(Defintion def)
+        private static string ConstructDefinitions(List<Defintion> defs)
         {
-            if(def.Partofspeech.Length == 0)
+            if (defs.Count == 1)
             {
-                return def.Meaning;
+                var def = defs[0];
+                if (def.Partofspeech.Length == 0)
+                {
+                    return def.Meaning;
+                }
+                else
+                {
+                    return string.Format("({0}) {1}", def.Partofspeech, def.Meaning);
+                }
             }
             else
             {
-                return string.Format("({0}) {1}", def.Partofspeech, def.Meaning);
+                string result = "";
+                int count = 1;
+                foreach (var def in defs)
+                {
+                    if (def.Partofspeech.Length == 0)
+                    {
+                        result += string.Format("{0}. {1}\n", count, def.Meaning);
+                    }
+                    else
+                    {
+                        result += string.Format("{0}. ({1}) {2}\n ", count, def.Partofspeech, def.Meaning);
+                    }
+                    count++;
+                }
+                return result;
             }
         }
 
         private void SetEntry()
         {
-            if (_testRunning == false || _workingEntries.Count ==-1) return;
+            if (_testRunning == false || _workingEntries.Count == -1) return;
 
             string questionCount = String.Format("{0} out of {1}", _currentTest, _numberOfTest);
             QuestionCountBox.Text = questionCount;
@@ -308,13 +330,13 @@ namespace Vocabulary
             var rnd = new Random();
 
             if (_testMode == TestMode.Random)
-            {         
+            {
                 var nextEntryIndex = rnd.Next(nEntries);
                 currentEntry = _workingEntries[nextEntryIndex];
                 _workingEntries.RemoveAt(nextEntryIndex);
             }
             else // if (_testMode == TestMode.Ordered) or Reverse or Alphabetical
-            {   
+            {
                 currentEntry = _workingEntries[_currentEntryIndex++];
             }
 
@@ -325,16 +347,16 @@ namespace Vocabulary
             switch (_correctBoxIndex)
             {
                 case 0:
-                    AnswerA.Text = ConstructDefinition(currentEntry.Definitions[0]);
+                    AnswerA.Text = ConstructDefinitions(currentEntry.Definitions);
                     break;
                 case 1:
-                    AnswerB.Text = ConstructDefinition(currentEntry.Definitions[0]);
+                    AnswerB.Text = ConstructDefinitions(currentEntry.Definitions);
                     break;
                 case 2:
-                    AnswerC.Text = ConstructDefinition(currentEntry.Definitions[0]);
+                    AnswerC.Text = ConstructDefinitions(currentEntry.Definitions);
                     break;
                 case 3:
-                    AnswerD.Text = ConstructDefinition(currentEntry.Definitions[0]);
+                    AnswerD.Text = ConstructDefinitions(currentEntry.Definitions);
                     break;
             }
 
@@ -347,7 +369,7 @@ namespace Vocabulary
 
             FillEmptyDefinitions(usedEntryIndexes, _correctBoxIndex, _wordEntries.Count);
         }
-        
+
         private void AButton_Click(object sender, EventArgs e)
         {
             // Check the correct Index if it = 0, then it's correct
@@ -366,7 +388,7 @@ namespace Vocabulary
             // update the % correct
             var percentage = 100 * (double)_numberCorrect / _currentTest;
             PercentCorrectBox.Text = String.Format("{0:0.00}", percentage);
-            NumberCorrectBox.Text = String.Format("{0} out of {1}", _numberCorrect,_currentTest) ;
+            NumberCorrectBox.Text = String.Format("{0} out of {1}", _numberCorrect, _currentTest);
             // call setEntry
             SetEntry();
         }
@@ -453,7 +475,7 @@ namespace Vocabulary
             {
                 if (count > 1000)
                     return 0;
-                
+
                 value = rnd.Next(numberofEntries);
                 count++;
             } while (usedDefinitions.Contains(value) == true && count < 1000);
@@ -466,33 +488,33 @@ namespace Vocabulary
             if (correctIndex != 0)  // A box
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerA.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
+                AnswerA.Text = ConstructDefinitions(_wordEntries[newIndex].Definitions);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 1)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerB.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
+                AnswerB.Text = ConstructDefinitions(_wordEntries[newIndex].Definitions);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 2)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerC.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
+                AnswerC.Text = ConstructDefinitions(_wordEntries[newIndex].Definitions);
                 usedDefinitions.Add(newIndex);
             }
 
             if (correctIndex != 3)
             {
                 var newIndex = GetNextUnusedEntry(usedDefinitions, numberOfEntries);
-                AnswerD.Text = ConstructDefinition(_wordEntries[newIndex].Definitions[0]);
+                AnswerD.Text = ConstructDefinitions(_wordEntries[newIndex].Definitions);
                 usedDefinitions.Add(newIndex);
             }
 
         }
-        
+
         private void ResetButton_Click(object sender, EventArgs e)
         {
             EnableButtonsForTest(false);
