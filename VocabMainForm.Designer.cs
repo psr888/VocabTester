@@ -217,7 +217,6 @@
             NumberofEntriesBox.ReadOnly = true;
             NumberofEntriesBox.Size = new System.Drawing.Size(116, 23);
             NumberofEntriesBox.TabIndex = 17;
-            NumberofEntriesBox.TextChanged += NumberofEntriesBox_TextChanged;
             // 
             // SelectEntryBox
             // 

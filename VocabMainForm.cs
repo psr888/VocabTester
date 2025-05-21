@@ -24,6 +24,7 @@ namespace Vocabulary
         private bool _testRunning = false;
         private TestMode _testMode = TestMode.Random;
         private int _currentEntryIndex = 0;
+        WordEntry _currentEntry;
 
         public VocabMainForm()
         {
@@ -79,11 +80,6 @@ namespace Vocabulary
             SentenceBox1.Text = "";
             SentenceBox2.Text = "";
             SentenceBox3.Text = "";
-
-        }
-
-        private void NumberofEntriesBox_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -326,41 +322,40 @@ namespace Vocabulary
             AnswerC.Text = "";
             AnswerD.Text = "";
             var nEntries = _workingEntries.Count;
-            WordEntry currentEntry;
             var rnd = new Random();
 
             if (_testMode == TestMode.Random)
             {
                 var nextEntryIndex = rnd.Next(nEntries);
-                currentEntry = _workingEntries[nextEntryIndex];
+                _currentEntry = _workingEntries[nextEntryIndex];
                 _workingEntries.RemoveAt(nextEntryIndex);
             }
             else // if (_testMode == TestMode.Ordered) or Reverse or Alphabetical
             {
-                currentEntry = _workingEntries[_currentEntryIndex++];
+                _currentEntry = _workingEntries[_currentEntryIndex++];
             }
 
-            TestWordBox.Text = currentEntry.Word;
+            TestWordBox.Text = _currentEntry.Word;
             _currentTest++;
 
             _correctBoxIndex = rnd.Next(4);
             switch (_correctBoxIndex)
             {
                 case 0:
-                    AnswerA.Text = ConstructDefinitions(currentEntry.Definitions);
+                    AnswerA.Text = ConstructDefinitions(_currentEntry.Definitions);
                     break;
                 case 1:
-                    AnswerB.Text = ConstructDefinitions(currentEntry.Definitions);
+                    AnswerB.Text = ConstructDefinitions(_currentEntry.Definitions);
                     break;
                 case 2:
-                    AnswerC.Text = ConstructDefinitions(currentEntry.Definitions);
+                    AnswerC.Text = ConstructDefinitions(_currentEntry.Definitions);
                     break;
                 case 3:
-                    AnswerD.Text = ConstructDefinitions(currentEntry.Definitions);
+                    AnswerD.Text = ConstructDefinitions(_currentEntry.Definitions);
                     break;
             }
 
-            var originalIndex = _wordEntries.FindIndex(e => e.Word == currentEntry.Word);
+            var originalIndex = _wordEntries.FindIndex(e => e.Word == _currentEntry.Word);
 
             List<int> usedEntryIndexes = new List<int>
             {
@@ -370,8 +365,14 @@ namespace Vocabulary
             FillEmptyDefinitions(usedEntryIndexes, _correctBoxIndex, _wordEntries.Count);
         }
 
-        private void ShowWrongAnswerForm(string word, int correctIndex, string correctDefinition, string correctSentence, int wrongIndex, string wrongDefinition)
+        private void ShowWrongAnswerForm(int correctIndex, int wrongIndex, string wrongDefinition)
         {
+            // Currently the form only shows the word.             
+            // You also need to show the correct answer and the sentence.
+            // Also show the index of the wrong and correct answer, and the wrongdefinition
+            var word = _currentEntry.Word;
+            var correctAnswer = ConstructDefinitions(_currentEntry.Definitions);
+            var correctSentence = _currentEntry.Definitions[correctIndex].Sentence;
             var form = new IncorrectAnswerForm();
             form.SetWord(word);
         }
@@ -387,8 +388,10 @@ namespace Vocabulary
             }
             else
             {
-                // if wrong, then put incorrect in the box.
+                // After testing add this to the other Button_Click methods
+                // Also display the other fields
                 Result_Box.Text = "Wrong!";
+                ShowWrongAnswerForm(_correctBoxIndex, 0, AnswerA.Text);
             }
 
             // update the % correct

@@ -20,3 +20,5 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:Vocabulary.VocabMainForm.DButton_Click(System.Object,System.EventArgs)")]
 [assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:Vocabulary.VocabMainForm.FillEmptyDefinitions(System.Collections.Generic.List{System.Int32},System.Int32,System.Int32)")]
 [assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:Vocabulary.VocabMainForm.ResetButton_Click(System.Object,System.EventArgs)")]
+[assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:Vocabulary.IncorrectAnswerForm.SetWord(System.String)")]
+[assembly: SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>", Scope = "member", Target = "~M:Vocabulary.Program.Main")]
