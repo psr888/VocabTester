@@ -370,6 +370,12 @@ namespace Vocabulary
             FillEmptyDefinitions(usedEntryIndexes, _correctBoxIndex, _wordEntries.Count);
         }
 
+        private void ShowWrongAnswerForm(string word, int correctIndex, string correctDefinition, string correctSentence, int wrongIndex, string wrongDefinition)
+        {
+            var form = new IncorrectAnswerForm();
+            form.SetWord(word);
+        }
+
         private void AButton_Click(object sender, EventArgs e)
         {
             // Check the correct Index if it = 0, then it's correct
