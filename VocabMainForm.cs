@@ -372,9 +372,15 @@ namespace Vocabulary
             // Also show the index of the wrong and correct answer, and the wrongdefinition
             var word = _currentEntry.Word;
             var correctAnswer = ConstructDefinitions(_currentEntry.Definitions);
-            var correctSentence = _currentEntry.Definitions[correctIndex].Sentence;
+            var correctSentence = _currentEntry.Definitions[0].Sentence;
             var form = new IncorrectAnswerForm();
             form.SetWord(word);
+            form.SetCorrectIndex(correctIndex);
+            form.SetCorrectDefintion(correctAnswer);
+            form.SetCorrectSentence(correctSentence);
+            form.SetWrongIndex(wrongIndex);
+            form.SetWrongDefintion(wrongDefinition);
+            form.ShowDialog();
         }
 
         private void AButton_Click(object sender, EventArgs e)
@@ -415,6 +421,7 @@ namespace Vocabulary
             {
                 // if wrong, then put incorrect in the box.
                 Result_Box.Text = "Wrong!";
+                ShowWrongAnswerForm(_correctBoxIndex, 1, AnswerA.Text);
             }
 
             // update the % correct
@@ -439,6 +446,7 @@ namespace Vocabulary
             {
                 // if wrong, then put incorrect in the box.
                 Result_Box.Text = "Wrong!";
+                ShowWrongAnswerForm(_correctBoxIndex, 2, AnswerA.Text);
             }
 
             // update the % correct
@@ -463,6 +471,7 @@ namespace Vocabulary
             {
                 // if wrong, then put incorrect in the box.
                 Result_Box.Text = "Wrong!";
+                ShowWrongAnswerForm(_correctBoxIndex, 3, AnswerA.Text);
             }
 
             // update the % correct
